@@ -32,6 +32,10 @@ body{
 #image{
     width: 30rem;
 }
+#player{
+    position: absolute;
+    z-index: -50;
+}
 /* Grain Animation */
 @keyframes grain{
     0%, 100% {transform: translate(0,0);}
