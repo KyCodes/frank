@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    position: fixed;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffdd0;
+    /* background: radial-gradient(ellipse at center, #fffdd0 0%, #5b2c15 150%); */
+    overflow: hidden;
+}
+#wrapper:after{
+    animation: grain 1s steps(10) infinite;
+    content: "";
+    background-image: url("noise.png");
+    background-size: repeat;
+    left: -50%;
+    top: -50%;
+    height: 200%;
+    width: 200%;
+    opacity: 0.15;
+    position: fixed;
+}
+#image{
+    width: 30rem;
+}
+/* Grain Animation */
+@keyframes grain{
+    0%, 100% {transform: translate(0,0);}
+    10% {transform: translate(-20%,-20%);}
+    10% {transform: translate(20%,20%);}
+}
+@media (max-width: 576px) {
+    #image{
+        width: 20rem;
+    }
+}
