@@ -32,10 +32,6 @@ body{
 #image{
     width: 30rem;
 }
-#song{
-    position: absolute;
-    z-index: -10;
-}
 /* Grain Animation */
 @keyframes grain{
     0%, 100% {transform: translate(0,0);}
@@ -45,8 +41,5 @@ body{
 @media (max-width: 576px) {
     #image{
         width: 20rem;
-    }
-    #wrapper{
-        height: 110vh;
     }
 }
