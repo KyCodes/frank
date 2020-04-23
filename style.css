@@ -18,7 +18,7 @@ body{
     overflow: hidden;
 }
 #wrapper:after{
-    animation: grain 1s steps(10) infinite;
+    animation: grain 6s steps(10) infinite;
     content: "";
     background-image: url("noise.png");
     background-size: repeat;
@@ -39,8 +39,13 @@ body{
 /* Grain Animation */
 @keyframes grain{
     0%, 100% {transform: translate(0,0);}
-    10% {transform: translate(-20%,-20%);}
-    10% {transform: translate(20%,20%);}
+    14% {transform: translate(-20%,-20%);}
+    28% {transform: translate(0,0);}
+    42% {transform: translate(-20%,20%);}
+    56% {transform: translate(0,0);}
+    70% {transform: translate(20%,20%);}
+    84% {transform: translate(0%,0%);}
+    98%{transform: translate(20%,-20%);}
 }
 @media (max-width: 576px) {
     #image{
